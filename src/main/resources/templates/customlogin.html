@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+    <head>
+        <title>EmailTemplateWizard</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    </head>
+    <body>
+        <div th:if="${param.error}">
+            Invalid username and password.
+        </div>
+        <div th:if="${param.logout}">
+            You have been logged out.
+        </div>
+        <form action="/appLogin" method="POST">
+			Enter UserName:	<input type="text" name="app_username"/><br/><br/>
+			Enter Password: <input type="password" name="app_password"/> <br/><br/>		
+			<input type='checkbox' name="remember-me-param"/>Remember Me? <br/>	
+			<input type="submit" value="Login"/>
+	</form>
+
+    </body>
+</html>

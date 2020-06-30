@@ -1,0 +1,7 @@
+com\ducat\bean\UserInfo.class
+com\ducat\bean\dao\UserDAO$1.class
+com\ducat\bean\dao\UserDAO.class
+com\ducat\MvcConfig.class
+com\ducat\SecurityConfig.class
+com\ducat\Myapplication.class
+com\ducat\service\AuthenticationService.class
